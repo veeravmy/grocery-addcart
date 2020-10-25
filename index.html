@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jQuery Smart Banners</title>
+
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	
+	var smartBanner = $('#smartBanner').offset().top;
+	
+	
+	$(window).scroll(function(){
+		
+		var woindowScroll= $(window).scrollTop();
+		
+		if  (woindowScroll > smartBanner){
+			
+		   $("#banner").css("position", "fixed");
+		   
+		   $("#banner").css("top", "0");
+		   
+		}
+		
+		if  (woindowScroll <= smartBanner){
+			
+		   $("#banner").css("position", "relative");
+		   
+		   $("#banner").css("top", $("#smartBanner").offset);
+		   
+
+		}
+	});
+	
+
+	
+});
+</script>
+
+<style>
+
+body{ font-family:Tahoma, Geneva, sans-serif; color:#000; font-size:11px; margin:0; padding:0; background-color:#09C}
+
+#main{
+width:960px;height:1100px; background-color:#FFF; margin:0 auto; margin-top:60px;
+}
+
+#left{width:700px; height:500px; float:left;}
+
+#left h3{font-size:12px; line-height:24px; margin:10px;}
+
+#right{width:260px; height:auto;float:left;}
+
+#banner{width:260px; height:200px; border-bottom:solid  #F7F7F7 1px;}
+
+#banner h2{margin:0; padding:5px; background-color:#F60; font-size:12px; color:#FFF; font-weight:700; border-top:solid #EBEBEB 1px;}
+
+
+#banner ul{margin:0; padding:5px;}
+
+#banner li{list-style:none; padding:5px; font-size:12px; color:#666;}
+
+#banner span{color:#09C; font-weight:bold;}
+
+#banner h3{color:#09C; font-weight:bold; padding:10px;}
+
+#smartBanner ul{margin:0; padding:5px;}
+
+#smartBanner h2{margin:0; padding:5px; background-color:#F7F7F7; font-size:12px; color:#999; font-weight:700; border-top:solid #EBEBEB 1px;}
+
+#smartBanner li{list-style:none; padding:5px; font-size:12px; color:#666;}
+
+#smartBanner span{color:#09C; font-weight:bold;}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="main">
+
+<div id="left">
+
+<h3>Hi! Introducing myself as Lesson Cup. I am an arena where people can visit by typing www.lessoncup.com from any where in the world. The purpose of my birth is to give solutions in JQuery, Ajax and PHP. 
+Coming to my Author Mr.Mohammad Khasim is a web designer and a developer who has got vast experience in giving solutions on JQuery, Ajax and PHP from small websites to big portals and high performing enterprise web applications. The innet passion to teach people has provoked him to introduce me to this world to fulfill his desire. Thanks a lot !!!<br><br>
+
+
+Hi! Introducing myself as Lesson Cup. I am an arena where people can visit by typing www.lessoncup.com from any where in the world. The purpose of my birth is to give solutions in JQuery, Ajax and PHP. 
+Coming to my Author Mr.Mohammad Khasim is a web designer and a developer who has got vast experience in giving solutions on JQuery, Ajax and PHP from small websites to big portals and high performing enterprise web applications. The innet passion to teach people has provoked him to introduce me to this world to fulfill his desire. Thanks a lot !!!<br><br>
+
+Hi! Introducing myself as Lesson Cup. I am an arena where people can visit by typing www.lessoncup.com from any where in the world. The purpose of my birth is to give solutions in JQuery, Ajax and PHP. 
+Coming to my Author Mr.Mohammad Khasim is a web designer and a developer who has got vast experience in giving solutions on JQuery, Ajax and PHP from small websites to big portals and high performing enterprise web applications. The innet passion to teach people has provoked him to introduce me to this world to fulfill his desire. Thanks a lot !!!<br>
+<br>
+Hi! Introducing myself as Lesson Cup. I am an arena where people can visit by typing www.lessoncup.com from any where in the world. The purpose of my birth is to give solutions in JQuery, Ajax and PHP. 
+Coming to my Author Mr.Mohammad Khasim is a web designer and a developer who has got vast experience in giving solutions on JQuery, Ajax and PHP from small websites to big portals and high performing enterprise web applications. The innet passion to teach people has provoked him to introduce me to this world to fulfill his desire. Thanks a lot !!!
+</h3>
+
+</div>
+
+<div id="right">
+
+<div id="banner">
+
+<h2>Suggested Groups</h2>
+
+<ul>
+<li><span>Web Design</span> <br>
+Plus
+Sagar Gangavane and 2 other friends joined
+Join Group</li>
+<li><span>Code Igniter PHP Framework</span><br>
+
+ICorethink WebTechnologies and 10 other friends joined</li>
+<li><span>Laravel | Framework | Community</span><br>
+
+Riaz Ak Surkhab and 12 other friends joined</li>
+</ul>
+
+</div>
+
+<div id="smartBanner">
+
+
+<h2>Sponsored</h2>
+
+<ul>
+<li>
+
+<span>
+T-Shirts under Rs. 299</span>
+junglee.com
+
+Find 2,000+ designs in T-shirts at Rs. 299 or less from across websites. Explore now!
+
+</li>
+
+<li>
+
+<span>T-Shirts under Rs. 299</span>
+junglee.com
+
+Find 2,000+ designs in T-shirts at Rs. 299 or less from across websites. Explore now!
+
+</li>
+
+<li>
+
+<span>T-Shirts under Rs. 299</span>
+junglee.com
+
+Find 2,000+ designs in T-shirts at Rs. 299 or less from across websites. Explore now!
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
